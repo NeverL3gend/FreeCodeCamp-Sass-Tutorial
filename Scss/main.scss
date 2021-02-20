@@ -1,0 +1,36 @@
+@import './reset';
+@import './variables';
+
+
+//have a function
+@function weight ($weight-name){
+    @return map-get($font-weights, $weight-name )
+};
+
+//
+@mixin  flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+body {
+    background: $primary-color;
+    color: $text-color;
+}
+
+//Nesting
+.main{
+    @include flexCenter(row);
+    width: 80%;
+    margin: 0 auto;
+// & equals the parent
+    #{&}-paragraph {
+        font-weight: weight(regular);
+
+    &:hover {
+         color: pink
+     }
+    }
+}

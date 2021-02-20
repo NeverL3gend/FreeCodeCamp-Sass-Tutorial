@@ -1,0 +1,14 @@
+Sass notes
+
+There are two syntaxes scss syntax. 
+scss sassy css. super set of css all valid css is 
+valids scss as well
+
+Indented Syntax uses .scss. it uses indentation instead of curley brackets
+
+A partial Sass files: is a name with a leading underscore.
+so when the compiler reads the file it ignores the underscore
+
+
+
+Video Time: 24:17
