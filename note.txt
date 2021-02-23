@@ -1,14 +1,53 @@
-Sass notes
+What Is Sass?
+-> Sass stands for Syntatical Awesome StyleSheets
+-> CSS PreProcessor / Extension
+-> Let's you use features that do not exist in CSS
+-> Sass (.scss) files are compiled to regular CSS
 
-There are two syntaxes scss syntax. 
-scss sassy css. super set of css all valid css is 
-valids scss as well
+There are two types of Sass file format: .scss and .sass
 
-Indented Syntax uses .scss. it uses indentation instead of curley brackets
-
-A partial Sass files: is a name with a leading underscore.
-so when the compiler reads the file it ignores the underscore
-
+.scss is backwards compatible with css and it has the same format of css where as the .sass uses indentation format
 
 
-Video Time: 24:17
+prefixed with a "$"
+-> Variables = custom properties
+-> easier to read and write than CSS custom properties
+
+
+Nesting
+-> nesting is shown like this
+
+nav {
+
+    ul {
+        nesting
+    }
+
+    li {
+        nesting
+    }
+
+    a {
+        nesting
+    }
+}
+
+Modules
+
+you can separate sass into separate files. You can make import request CSS you will need to load multiple HTP request while Sass you will load only one css file.
+
+you can create different components. you can make sure that the file is not compiled if you use the underscore
+
+
+function & Mixin
+
+Mixin you place css  while functions returns something
+
+
+
+Inheritance:
+
+
+Operators: you can calculate in css
+
+Conditionals: 
